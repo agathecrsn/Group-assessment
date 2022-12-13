@@ -32,8 +32,10 @@ df2 <- Credit[Credit$Married=='Yes' & Credit$Age>40,]
 
 # Total Balance and average Balance when Student=='Yes' 
 sum(df1$Balance)
+mean(df1$Balance)
 # Total Balance and average Balance when Married=='Yes' AND Age>40 
 sum(df2$Balance)
+mean(df2$Balance)
 
 ##Histogram##
 # Histogram plot of Balance
