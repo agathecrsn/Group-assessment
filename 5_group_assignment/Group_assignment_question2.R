@@ -65,7 +65,7 @@ contrasts(train$default)  # Yes=1, No=0
 coef(glm.fits)
 
 ########################
-### 5. TEST  MODEL  ####
+### 4. TEST  MODEL  ####
 ########################
 
 ## TEST MODEL USING TEST DATA 
@@ -94,9 +94,9 @@ table(glm.pred,test$default)
 ## misclassification = 1 - accuracy = 1 - 0.97 = 3%
 mean(glm.pred!=test$default)
 
-###################################################
-### MODELING ITERATION 2 - sort class imbalance ###
-###################################################
+#####################################################
+### 5. MODELING ITERATION  - sort class imbalance ###
+#####################################################
 
 # Import package dplyr
 library(dplyr)
